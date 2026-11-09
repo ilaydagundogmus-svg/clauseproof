@@ -1,0 +1,24 @@
+DATA PROCESSING AGREEMENT (SYNTHETIC TEST DOCUMENT C08)
+
+This agreement is made between Example Retail GmbH (the "Controller") and CloudHost Services Ltd (the "Processor") and supplements the main services agreement between them (the "Main Agreement"). All names are fictitious.
+
+1. Fees
+1.1 The Controller pays the fees set out in the Main Agreement.
+
+2. Processing purposes
+2.1 The Processor may process personal data for its own business purposes, including product improvement, in addition to providing the services.
+
+3. Sub-processors
+3.1 The Processor may engage sub-processors at its own discretion and will publish a list of them on its website.
+
+4. Liability
+4.1 Each party's liability under this DPA is governed by the provisions of the Main Agreement.
+
+5. Retention
+5.1 After the end of the services the Processor may retain the personal data for as long as it considers necessary for its own business purposes.
+
+6. International transfers
+6.1 The Processor may transfer personal data to its affiliates and partners in any country in which they operate.
+
+7. Governing law
+7.1 This DPA is governed by German law. The courts of Munich have exclusive jurisdiction.

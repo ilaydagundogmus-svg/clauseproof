@@ -1,0 +1,45 @@
+DATA PROCESSING AGREEMENT (SYNTHETIC TEST DOCUMENT C01)
+
+This agreement is made between Example Retail GmbH (the "Controller") and CloudHost Services Ltd (the "Processor") and supplements the main services agreement between them (the "Main Agreement"). All names are fictitious.
+
+1. Fees
+1.1 The Controller pays the fees set out in the Main Agreement.
+
+2. Subject matter and duration
+2.1 The Processor provides cloud hosting services to the Controller and in doing so processes personal data on the Controller's behalf for the duration of the Main Agreement. The processing consists of storing and retrieving data for the purpose of operating the Controller's online shop. The personal data processed are names, email addresses, delivery addresses and order histories; the data subjects are the Controller's customers and website visitors.
+
+3. Instructions
+3.1 The Processor shall process personal data only on documented instructions from the Controller, including with regard to transfers of personal data to a third country or an international organisation, unless required to do so by Union or Member State law to which the Processor is subject; in such a case the Processor shall inform the Controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest.
+
+4. Confidentiality
+4.1 The Processor ensures that all persons authorised to process the personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality.
+
+5. Security of processing
+5.1 The Processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, as required by Article 32 GDPR, and as described in Annex II (including encryption at rest and in transit, access controls and regular testing).
+
+6. Sub-processors
+6.1 The Processor shall not engage another processor without the Controller's prior specific or general written authorisation. In the case of general authorisation, the Processor shall inform the Controller of any intended addition or replacement of sub-processors, giving the Controller the opportunity to object. The Processor shall impose the same data protection obligations on each sub-processor by contract and remains fully liable to the Controller for the sub-processor's performance.
+
+7. Liability
+7.1 Each party's liability under this DPA is governed by the provisions of the Main Agreement.
+
+8. Data subject requests
+8.1 Taking into account the nature of the processing, the Processor shall assist the Controller by appropriate technical and organisational measures, insofar as this is possible, in fulfilling the Controller's obligation to respond to requests from data subjects to exercise their rights under Chapter III GDPR.
+
+9. Assistance and breach notification
+9.1 The Processor shall notify the Controller without undue delay, and in any event within 48 hours, after becoming aware of a personal data breach, and shall assist the Controller in ensuring compliance with its obligations under Articles 32 to 36 GDPR, including data protection impact assessments and prior consultation with supervisory authorities.
+
+10. Deletion or return
+10.1 At the choice of the Controller, the Processor shall delete or return all personal data to the Controller after the end of the provision of the services and delete existing copies within 30 days, unless Union or Member State law requires storage of the personal data.
+
+11. Audits
+11.1 The Processor shall make available to the Controller all information necessary to demonstrate compliance with Article 28 GDPR and shall allow for and contribute to audits, including inspections, conducted by the Controller or another auditor mandated by the Controller.
+
+12. Unlawful instructions
+12.1 The Processor shall immediately inform the Controller if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.
+
+13. International transfers
+13.1 The Processor may transfer personal data to a country outside the European Economic Area only where an adequacy decision applies or the transfer is covered by the standard contractual clauses adopted by the European Commission, which are incorporated into this DPA by reference.
+
+14. Governing law
+14.1 This DPA is governed by German law. The courts of Munich have exclusive jurisdiction.

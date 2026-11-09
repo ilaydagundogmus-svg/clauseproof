@@ -1,0 +1,42 @@
+DATA PROCESSING AGREEMENT (SYNTHETIC TEST DOCUMENT C10)
+
+This agreement is made between Example Retail GmbH (the "Controller") and CloudHost Services Ltd (the "Processor") and supplements the main services agreement between them (the "Main Agreement"). All names are fictitious.
+
+1. Fees
+1.1 The Controller pays the fees set out in the Main Agreement.
+
+2. Description of processing
+2.1 Duration: this DPA applies for as long as the Processor handles personal data under the Main Agreement. Nature and purpose: customer support ticket handling and analytics reporting for the Controller. Categories of personal data: contact details, account identifiers and support correspondence. Categories of data subjects: the Controller's customers and employees.
+
+3. Processing purposes
+3.1 The Processor may process personal data for its own business purposes, including product improvement, in addition to providing the services.
+
+4. Personnel
+4.1 Every employee and contractor of the Processor who may access the personal data is bound by a written confidentiality undertaking that continues after their engagement ends.
+
+5. Technical and organisational measures
+5.1 Taking into account the state of the art and the risks of processing, the Processor maintains the security measures listed in Annex 1, including pseudonymisation, role-based access, backup and recovery procedures and an annual penetration test.
+
+6. Use of subcontractors
+6.1 Subcontractors may be used only with the Controller's prior written consent. The Processor shall flow down to every subcontractor the data protection obligations of this DPA and remains responsible towards the Controller for any subcontractor's acts and omissions.
+
+7. Liability
+7.1 Each party's liability under this DPA is governed by the provisions of the Main Agreement.
+
+8. Data subject rights
+8.1 If a data subject contacts the Processor, the Processor will forward the request to the Controller without delay and will help the Controller, using appropriate measures, to respond to access, rectification, erasure and other rights requests.
+
+9. Breaches
+9.1 The Processor shall notify the Controller of a personal data breach without undue delay.
+
+10. End of services
+10.1 When the services end, the Processor will, as the Controller instructs, either return all personal data or securely delete it, and will certify deletion in writing within 30 days. Copies are deleted as well, save where retention is required by law.
+
+11. Audit rights
+11.1 On reasonable notice the Controller or an auditor it appoints may inspect the Processor's premises and systems relevant to the processing. The Processor will provide all documentation reasonably required to demonstrate compliance with this DPA and Article 28 GDPR.
+
+12. Third-country transfers
+12.1 Any transfer of personal data to a third country will be carried out on the basis of Chapter V GDPR, namely an adequacy decision or the EU Standard Contractual Clauses (Module Two), which the parties hereby conclude.
+
+13. Governing law
+13.1 This DPA is governed by German law. The courts of Munich have exclusive jurisdiction.

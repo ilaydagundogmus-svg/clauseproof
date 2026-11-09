@@ -1,0 +1,42 @@
+DATA PROCESSING AGREEMENT (SYNTHETIC TEST DOCUMENT C06)
+
+This agreement is made between Example Retail GmbH (the "Controller") and CloudHost Services Ltd (the "Processor") and supplements the main services agreement between them (the "Main Agreement"). All names are fictitious.
+
+1. Fees
+1.1 The Controller pays the fees set out in the Main Agreement.
+
+2. Subject matter
+2.1 The Processor processes personal data on behalf of the Controller in connection with the services under the Main Agreement.
+
+3. Processing purposes
+3.1 The Processor may process personal data for its own business purposes, including product improvement, in addition to providing the services.
+
+4. Personnel
+4.1 Every employee and contractor of the Processor who may access the personal data is bound by a written confidentiality undertaking that continues after their engagement ends.
+
+5. Technical and organisational measures
+5.1 Taking into account the state of the art and the risks of processing, the Processor maintains the security measures listed in Annex 1, including pseudonymisation, role-based access, backup and recovery procedures and an annual penetration test.
+
+6. Use of subcontractors
+6.1 Subcontractors may be used only with the Controller's prior written consent. The Processor shall flow down to every subcontractor the data protection obligations of this DPA and remains responsible towards the Controller for any subcontractor's acts and omissions.
+
+7. Liability
+7.1 Each party's liability under this DPA is governed by the provisions of the Main Agreement.
+
+8. Incident support
+8.1 The Processor will inform the Controller of any personal data breach within 24 hours of discovery, provide the information needed for the Controller's notifications to authorities and data subjects, and support the Controller with data protection impact assessments and prior consultations.
+
+9. End of services
+9.1 When the services end, the Processor will, as the Controller instructs, either return all personal data or securely delete it, and will certify deletion in writing within 30 days. Copies are deleted as well, save where retention is required by law.
+
+10. Compliance information
+10.1 The Processor shall provide the Controller, on request, with a copy of its current ISO 27001 certificate.
+
+11. Notice of infringing instructions
+11.1 Should the Processor consider that any instruction given by the Controller would violate data protection law, it will tell the Controller without delay and may suspend execution of that instruction until the Controller confirms or amends it.
+
+12. International transfers
+12.1 The Processor may transfer personal data to its affiliates and partners in any country in which they operate.
+
+13. Governing law
+13.1 This DPA is governed by German law. The courts of Munich have exclusive jurisdiction.
