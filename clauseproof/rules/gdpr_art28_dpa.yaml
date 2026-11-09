@@ -2,7 +2,7 @@ framework: gdpr_art28_dpa
 version: "0.1"
 date: "2026-11-09"
 source: "Regulation (EU) 2016/679, Art. 28"
-verification_status: "UNVERIFIED - article references must be checked against the official EUR-Lex text"
+verification_status: "PARTIAL (2026-11-09): Art. 28(1)-(4) structure checked against the as-adopted text on legislation.gov.uk; EUR-Lex itself not fetched. Not yet confirmed: the third-country transfer wording in 28(3)(a) and the Chapter V article range 44-49."
 rules:
   - id: DPA-01
     title: "Subject matter, duration, nature, purpose, data types and data subject categories"
