@@ -19,7 +19,14 @@ from tenacity import (
     wait_exponential,
 )
 
-from .config import MAX_OUTPUT_TOKENS, MAX_RETRIES, REQUEST_TIMEOUT_S, RULES_PER_CALL, Settings
+from .config import (
+    LOW_CONFIDENCE,
+    MAX_OUTPUT_TOKENS,
+    MAX_RETRIES,
+    REQUEST_TIMEOUT_S,
+    RULES_PER_CALL,
+    Settings,
+)
 from .rules.loader import Rule, RuleSet
 from .schemas import AnalysisReport, FindingBatch, RuleFinding, Status, tool_input_schema
 from .segmenter import format_clauses, segment
@@ -27,7 +34,6 @@ from .segmenter import format_clauses, segment
 log = logging.getLogger("clauseproof.analyzer")
 
 TOOL_NAME = "report_findings"
-LOW_CONFIDENCE = 0.5
 
 SYSTEM_PROMPT = """\
 You review a Data Processing Agreement (DPA) against a checklist of GDPR Art. 28 rules.
@@ -108,7 +114,6 @@ class Analyzer:
         started = time.monotonic()
         clauses = segment(text)
         contract_block = format_clauses(clauses)
-        rules_by_id = {r.id: r for r in ruleset.rules}
 
         findings: dict[str, RuleFinding] = {}
         for group in _chunks(ruleset.rules, RULES_PER_CALL):
@@ -116,11 +121,7 @@ class Analyzer:
                 findings[finding.rule_id] = finding
 
         ordered = [findings[r.id] for r in ruleset.rules]
-        review = [
-            f.rule_id
-            for f in ordered
-            if f.confidence < LOW_CONFIDENCE and rules_by_id[f.rule_id] is not None
-        ]
+        review = [f.rule_id for f in ordered if f.confidence < LOW_CONFIDENCE]
         log.info(
             "analysis done model=%s rules=%d calls=%d in_tokens=%d out_tokens=%d seconds=%.1f",
             self.model,

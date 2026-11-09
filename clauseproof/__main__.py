@@ -9,7 +9,9 @@ import sys
 from .analyzer import AnalysisError, Analyzer
 from .config import ConfigError, load_settings
 from .parsing import ParsingError, read_document
+from .pipeline import run_analysis
 from .rules.loader import RuleSetError, load_rules
+from .scoring import ScoringError, rule_color, summarize
 
 DISCLAIMER = (
     "This tool does not provide legal advice; results must be reviewed by a qualified lawyer."
@@ -35,14 +37,14 @@ def main(argv: list[str] | None = None) -> int:
         text = read_document(args.path)
         ruleset = load_rules(args.framework)
         settings = load_settings()
-        report = Analyzer(settings).analyze(text, ruleset)
+        report = run_analysis(text, ruleset, Analyzer(settings))
     except ParsingError as exc:
         print(f"Input error: {exc}", file=sys.stderr)
         return EXIT_INPUT
     except (ConfigError, RuleSetError) as exc:
         print(f"Configuration error: {exc}", file=sys.stderr)
         return EXIT_CONFIG
-    except AnalysisError as exc:
+    except (AnalysisError, ScoringError) as exc:
         print(f"Analysis failed: {exc}", file=sys.stderr)
         return EXIT_ANALYSIS
 
@@ -50,14 +52,19 @@ def main(argv: list[str] | None = None) -> int:
         print(report.model_dump_json(indent=2))
     else:
         titles = {r.id: r for r in ruleset.rules}
-        print(f"Framework: {report.framework} (rules v{report.rules_version})\n")
+        print(f"Framework: {report.framework} (rules v{report.rules_version})")
+        if report.score is not None:
+            print(f"Compliance score: {report.score * 100:.0f}%")
+        print(f"{summarize(report.findings, ruleset).summary()}\n")
         for f in report.findings:
             rule = titles[f.rule_id]
-            print(f"{f.rule_id} [{f.status.value.upper()}] {rule.title}")
+            color = rule_color(f, rule).value.upper()
+            print(f"{f.rule_id} [{f.status.value.upper()} / {color}] {rule.title}")
             print(f"  Legal basis: {rule.legal_basis}   Clause: {f.clause_ref or '-'}")
             print(f"  Rationale: {f.rationale}")
             if f.evidence_quote:
-                print(f'  Quote: "{f.evidence_quote}"')
+                badge = "verified" if f.grounded else "NOT VERIFIED - counted as missing"
+                print(f'  Quote ({badge}): "{f.evidence_quote}"')
             if f.suggested_revision:
                 print(f"  Suggested revision: {f.suggested_revision}")
             print(f"  Confidence: {f.confidence:.2f}\n")
