@@ -1,0 +1,234 @@
+framework: gdpr_art28_dpa
+version: "0.1"
+date: "2026-11-09"
+source: "Regulation (EU) 2016/679, Art. 28"
+verification_status: "UNVERIFIED - article references must be checked against the official EUR-Lex text"
+rules:
+  - id: DPA-01
+    title: "Subject matter, duration, nature, purpose, data types and data subject categories"
+    legal_basis: "GDPR Art. 28(3), introductory sentence"
+    weight: 2
+    mandatory: true
+    question: >
+      Does the contract set out the subject matter and duration of the processing,
+      its nature and purpose, the type of personal data and the categories of
+      data subjects?
+    satisfied_when:
+      - "Subject matter and duration are stated"
+      - "Nature and purpose of the processing are described"
+      - "Types of personal data and categories of data subjects are listed"
+    red_flags:
+      - "Only a generic reference to 'all personal data'"
+      - "No duration or no description of the purpose"
+    suggested_clause_hint: >
+      Describe the subject matter, duration, nature and purpose of the processing,
+      the types of personal data and the categories of data subjects, for example in an annex.
+
+  - id: DPA-02
+    title: "Processing only on documented instructions, including transfers"
+    legal_basis: "GDPR Art. 28(3)(a)"
+    weight: 3
+    mandatory: true
+    question: >
+      Does the contract require the processor to process personal data only on
+      documented instructions from the controller, including with regard to
+      transfers to a third country or international organisation, unless required
+      by Union or Member State law (in which case the processor informs the
+      controller before processing, unless that law prohibits it)?
+    satisfied_when:
+      - "Processing is limited to documented controller instructions"
+      - "Transfers are covered by the instruction requirement"
+      - "Legal-requirement exception with prior notice to the controller is addressed"
+    red_flags:
+      - "Processor may determine purposes and means on its own"
+      - "Processor may use the data for its own purposes"
+    suggested_clause_hint: >
+      The processor shall process personal data only on documented instructions from the
+      controller, including regarding transfers to a third country or international
+      organisation, unless required to do so by Union or Member State law; in that case
+      the processor shall inform the controller before processing, unless that law
+      prohibits this.
+
+  - id: DPA-03
+    title: "Confidentiality commitment of authorised persons"
+    legal_basis: "GDPR Art. 28(3)(b)"
+    weight: 2
+    mandatory: true
+    question: >
+      Does the contract ensure that persons authorised to process the personal data
+      have committed themselves to confidentiality or are under an appropriate
+      statutory obligation of confidentiality?
+    satisfied_when:
+      - "Authorised personnel are bound by confidentiality"
+      - "The obligation is contractual or statutory"
+    red_flags:
+      - "Confidentiality limited to management only"
+      - "No confidentiality obligation for personnel"
+    suggested_clause_hint: >
+      The processor shall ensure that persons authorised to process the personal data
+      have committed themselves to confidentiality or are under an appropriate statutory
+      obligation of confidentiality.
+
+  - id: DPA-04
+    title: "Security measures"
+    legal_basis: "GDPR Art. 28(3)(c), Art. 32"
+    weight: 3
+    mandatory: true
+    question: >
+      Does the contract require the processor to take all measures required
+      pursuant to Article 32 (appropriate technical and organisational measures)?
+    satisfied_when:
+      - "Appropriate technical and organisational measures are required"
+      - "Measures are specified or referenced (e.g. an annex)"
+    red_flags:
+      - "No concrete security measures"
+      - "Security left entirely to the processor with no standard"
+    suggested_clause_hint: >
+      The processor shall implement appropriate technical and organisational measures
+      to ensure a level of security appropriate to the risk, as set out in Article 32,
+      and describe them in an annex.
+
+  - id: DPA-05
+    title: "Sub-processor conditions"
+    legal_basis: "GDPR Art. 28(2), 28(4), 28(3)(d)"
+    weight: 3
+    mandatory: true
+    question: >
+      Does the contract require prior specific or general written authorisation of
+      the controller before engaging another processor (with notice of changes and a
+      chance to object in the general case), and does it require the same data
+      protection obligations to be imposed on the sub-processor, with the initial
+      processor remaining liable?
+    satisfied_when:
+      - "Prior written authorisation (specific or general) is required"
+      - "For general authorisation, the controller is informed of changes and may object"
+      - "The same data protection obligations flow down to sub-processors"
+      - "The processor remains liable for sub-processors"
+    red_flags:
+      - "Processor may engage sub-processors freely without notice"
+      - "No flow-down of obligations"
+    suggested_clause_hint: >
+      The processor shall not engage another processor without prior specific or general
+      written authorisation of the controller; in the case of general authorisation it shall
+      inform the controller of intended changes and give it the opportunity to object. The same
+      data protection obligations shall be imposed on the sub-processor, and the processor
+      remains fully liable to the controller.
+
+  - id: DPA-06
+    title: "Assistance with data subject requests"
+    legal_basis: "GDPR Art. 28(3)(e)"
+    weight: 2
+    mandatory: true
+    question: >
+      Does the contract require the processor to assist the controller, by
+      appropriate technical and organisational measures, in responding to data
+      subject requests under Chapter III?
+    satisfied_when:
+      - "The processor assists with data subject rights requests"
+      - "The assistance is by appropriate technical and organisational measures"
+    red_flags:
+      - "Processor may refuse assistance"
+      - "Assistance only against additional unspecified fees with no commitment"
+    suggested_clause_hint: >
+      Taking into account the nature of the processing, the processor shall assist the
+      controller by appropriate technical and organisational measures in fulfilling its
+      obligation to respond to requests to exercise data subject rights.
+
+  - id: DPA-07
+    title: "Assistance with security, breach notification, DPIA and prior consultation"
+    legal_basis: "GDPR Art. 28(3)(f), Arts. 32-36"
+    weight: 3
+    mandatory: true
+    question: >
+      Does the contract require the processor to assist the controller in ensuring
+      compliance with the obligations on security, personal data breach notification,
+      data protection impact assessments and prior consultation (Articles 32 to 36)?
+    satisfied_when:
+      - "Assistance with security obligations is required"
+      - "The processor notifies the controller of personal data breaches"
+      - "Assistance with DPIAs and prior consultation is required"
+    red_flags:
+      - "No breach notification duty"
+      - "Breach notification without undue delay is not required or no timeframe at all"
+    suggested_clause_hint: >
+      The processor shall assist the controller in ensuring compliance with Articles 32
+      to 36, taking into account the nature of processing and the information available
+      to it, and shall notify the controller of a personal data breach without undue delay.
+
+  - id: DPA-08
+    title: "Deletion or return of data"
+    legal_basis: "GDPR Art. 28(3)(g)"
+    weight: 2
+    mandatory: true
+    question: >
+      Does the contract require the processor, at the end of the services and at the
+      controller's choice, to delete or return all personal data and delete existing
+      copies? Is there an exception for storage required by Union or Member State law?
+    satisfied_when:
+      - "The controller chooses between deletion and return"
+      - "A time limit or mechanism for completion is stated"
+    red_flags:
+      - "Deletion solely at the processor's discretion"
+      - "Unlimited retention right"
+    suggested_clause_hint: >
+      At the controller's choice, delete or return all personal data after the end of the
+      services and delete existing copies, unless Union or Member State law requires storage.
+
+  - id: DPA-09
+    title: "Audits and information rights"
+    legal_basis: "GDPR Art. 28(3)(h)"
+    weight: 2
+    mandatory: true
+    question: >
+      Does the contract require the processor to make available all information
+      necessary to demonstrate compliance with Article 28 and to allow for and
+      contribute to audits, including inspections, by the controller or another
+      auditor mandated by the controller?
+    satisfied_when:
+      - "The processor provides information to demonstrate compliance"
+      - "Audits and inspections by the controller or its mandated auditor are allowed"
+    red_flags:
+      - "Audits excluded entirely"
+      - "Only the processor's own certifications are offered, with no audit right"
+    suggested_clause_hint: >
+      The processor shall make available to the controller all information necessary to
+      demonstrate compliance with Article 28 and allow for and contribute to audits,
+      including inspections, conducted by the controller or another auditor mandated by it.
+
+  - id: DPA-10
+    title: "Notification of infringing instructions"
+    legal_basis: "GDPR Art. 28(3), final subparagraph"
+    weight: 1
+    mandatory: true
+    question: >
+      Does the contract require the processor to immediately inform the controller
+      if, in its opinion, an instruction infringes the GDPR or other Union or Member
+      State data protection provisions?
+    satisfied_when:
+      - "The processor must immediately inform the controller of instructions it considers infringing"
+    red_flags:
+      - "Processor must follow all instructions with no duty to flag infringements"
+    suggested_clause_hint: >
+      The processor shall immediately inform the controller if, in its opinion, an
+      instruction infringes the GDPR or other Union or Member State data protection provisions.
+
+  - id: DPA-11
+    title: "Valid transfer mechanism for third-country transfers"
+    legal_basis: "GDPR Arts. 44-49 (Chapter V)"
+    weight: 2
+    mandatory: false
+    question: >
+      If personal data may be transferred to a third country or international
+      organisation, does the contract identify a valid transfer mechanism, such as an
+      adequacy decision, standard contractual clauses or binding corporate rules? If the
+      contract excludes any such transfer, mark the rule not_applicable.
+    satisfied_when:
+      - "A valid mechanism under Chapter V is named (e.g. SCCs, adequacy decision, BCRs)"
+      - "Or transfers outside the EEA are expressly excluded (not_applicable)"
+    red_flags:
+      - "Transfers permitted with no mechanism"
+      - "Reference to an invalidated or non-existent mechanism"
+    suggested_clause_hint: >
+      Transfers to third countries or international organisations shall take place only
+      under a valid Chapter V mechanism, for example an adequacy decision or the standard
+      contractual clauses, which are incorporated into this agreement.
